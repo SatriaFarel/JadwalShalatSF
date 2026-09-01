@@ -1,13 +1,14 @@
 {
   "functions": {
-    "api/*.php": {
-      "runtime": "vercel-php@0.6.0"
-    },
     "*.php": {
       "runtime": "vercel-php@0.6.0"
     }
   },
   "routes": [
+    {
+      "src": "/jadwal.php",
+      "dest": "/jadwal.php"
+    },
     {
       "src": "/(.*)",
       "dest": "/index.php"
